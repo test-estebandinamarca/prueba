@@ -1,6 +1,3 @@
-// Variables -------------------------
-@azul-top:                 #00405C;
-
 // Font-face -------------------------
 @font-face {
     font-family: 'enriquetabold';
@@ -10,22 +7,52 @@
          url('../fonts/enriqueta-bold-webfont.ttf') format('truetype'),
          url('../fonts/enriqueta-bold-webfont.svg#enriquetabold') format('svg');
     font-weight: normal;
-    font-style: normal;
-}
+    font-style: normal;}
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('../fonts/din-webfont.eot');
+    src: url('../fonts/din-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din-webfont.woff') format('woff'),
+         url('../fonts/din-webfont.ttf') format('truetype'),
+         url('../fonts/din-webfont.svg#dinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'din_lightregular';
+    src: url('../fonts/din_light-webfont.eot');
+    src: url('../fonts/din_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_light-webfont.woff') format('woff'),
+         url('../fonts/din_light-webfont.ttf') format('truetype'),
+         url('../fonts/din_light-webfont.svg#din_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'din_mediumregular';
+    src: url('../fonts/din_medium-webfont.eot');
+    src: url('../fonts/din_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/din_medium-webfont.woff') format('woff'),
+         url('../fonts/din_medium-webfont.ttf') format('truetype'),
+         url('../fonts/din_medium-webfont.svg#din_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
 
 // Fonts -------------------------
-h2.prueba {font-family:'enriquetabold', Verdana, Geneva, sans-serif;}
+h3.prueba {color: @white; font-family: "din_lightregular", Helvetica, Arial, sans-serif;}
+h3.left-bar-type {font-family: "enriquetabold", Helvetica, Arial, sans-serif;}
 
-// Navbar  -------------------------
-// @navbarHeight:                    40px;
-// @navbarBackgroundHighlight:       #00405C;
-// @navbarBackground:                darken(@navbarBackgroundHighlight, 0%);
-// @navbarBorder:                    darken(@navbarBackground, 12%);
+// CSS ---------------------------
+// Navbar ------------------------
+.nav-second {background-color:@azul-principal; margin-top: -20px;}
+.logo-img {margin-top: -45px;}
 
-// @navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+.nav-third {background-color:@celeste-bordes; margin-top: -20px; display: block;}
+li.nav-third-links a {color: @azul-principal;}
 
+// Contenido
+.contenido {margin-top: -20px;}
 
-// .nav-collapse .nav > li > a:hover,
-// .nav-collapse .dropdown-menu a:hover {
-// background-color: @navbarBackground;
-// }
+// Left Bar
+.left-bar {background-color:@azul-left-bar; border: 10px @celeste-bordes solid; border-top: none; padding: 12px; margin-top: -20px}
